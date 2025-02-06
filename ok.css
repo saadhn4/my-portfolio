@@ -1,0 +1,84 @@
+/* Reset and Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Headings */
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* Highlight */
+.highlight {
+  color: #ff4757;
+  font-weight: bold;
+}
+
+/* Social Media Icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #444;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff4757;
+}
+
+/* Projects */
+.projects li {
+  list-style: none;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+}
+
+.projects a:hover {
+  color: #ff4757;
+  font-weight: bold;
+}
+
+/* Contact */
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
