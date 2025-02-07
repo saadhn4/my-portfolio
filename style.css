@@ -32,12 +32,8 @@ body {
   width: 420px;
   padding: 30px;
   border-radius: 13px;
-  transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-}
 
 .pfp {
   width: 100px;
@@ -87,6 +83,11 @@ a:active {
 
 .fa-brands {
   font-size: 20px;
+  transform: 0.3s ease
+}
+
+.fa-brands:hover {
+  transform: scale(1.15);
 }
 
 .inner-card {
@@ -110,4 +111,8 @@ a:active {
 
 .projects-row li {
   margin-bottom: 10px;
+}
+
+.projects-row li:hover {
+  text-decoration: underline #fff;
 }
