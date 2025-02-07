@@ -1,70 +1,113 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
+
 }
 
 html,
 body {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-  width: 1200px;
-  margin: 70px auto;
-  background-color: white;
-
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(29, 31, 32, 0.95);
 }
 
-.left {
-  border: none;
-  height: 74vh;
-
-  cursor: pointer;
-}
-
-.left,
-.right {
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1c1e21;
+  width: 420px;
+  padding: 30px;
+  border-radius: 13px;
   transition: transform 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  padding: 20px 30px;
 }
 
-.left:hover,
-.right:hover {
+.card:hover {
   transform: translateY(-10px);
 }
 
-.title {
+.pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.list {
-  line-height: 30px;
+.name,
+.desc {
+  text-align: center;
+
+}
+
+.desc {
   margin-bottom: 20px;
-  text-decoration: none
 }
 
-.social-media-title {
-  margin: 10px 0;
+.links-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.right {
-  border: none;
-  height: 74vh;
-  padding: 30px;
-  cursor: pointer;
 
+a {
+  color: #fff;
+  /* Set it to your preferred color */
+  text-decoration: none;
+  /* Optional: Removes underline */
 }
 
-.contact {
-  margin-top: 30px;
-  padding-bottom: 20px;
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+  /* Ensures no color change */
+}
+
+
+.fa-brands {
+  font-size: 20px;
+}
+
+.inner-card {
+  align-self: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.proj-desc {
+  color: rgb(96, 96, 96);
+}
+
+.projects-row {
+  align-self: flex-start;
+  padding-left: 20px;
+}
+
+.projects-row h3 {
+  margin-bottom: 15px;
+}
+
+.projects-row li {
+  margin-bottom: 10px;
 }
