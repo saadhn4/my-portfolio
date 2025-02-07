@@ -72,16 +72,16 @@ body {
 
 a {
   color: #fff;
-  /* Set it to your preferred color */
+
   text-decoration: none;
-  /* Optional: Removes underline */
+
 }
 
 a:visited,
 a:hover,
 a:active {
   color: #fff;
-  /* Ensures no color change */
+
 }
 
 
